@@ -95,6 +95,12 @@
   z-index: 2;
   display: none;
 }
+.join{
+	height: 100px;
+	background: yellow;
+	width: 200px;
+	margin:  0 auto;
+}
 .header .box .h-nav .navs li {
   float: left;
   line-height: 24px;
