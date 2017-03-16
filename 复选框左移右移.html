@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-3.1.1.js"></script>
+		<style>
+		*{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+			#left{
+				float: left;
+				width: 500px;
+				height: 500px;
+				border: 1px solid black;
+				padding-left: 5px;
+			}
+			#right{
+				float: right;
+				width: 500px;
+				height: 500px;
+				border: 1px solid black;
+			}
+			.box{
+				width: 1010px;
+				height: 500px;
+				
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="box">
+			<div id="left">
+			<ul>
+				<li><input type="checkbox"/>111111111</li>
+				<li><input type="checkbox"/>222222222</li>
+				<li><input type="checkbox"/>333333333</li>
+				<li><input type="checkbox"/>444444444</li>
+				<li><input type="checkbox"/>555555555</li>
+				<li><input type="checkbox"/>666666666</li>
+				<li><input type="checkbox"/>777777777</li>
+				<li><input type="checkbox"/>888888888</li>
+				<li><input type="checkbox"/>999999999</li>
+				<li><input type="checkbox"/>aaaaaaaaa</li>
+				<li><input type="checkbox"/>sssssssss</li>
+				<li><input type="checkbox"/>zzzzzzzzz</li>
+				
+			</ul>
+		</div>
+		<div id="right">
+			<ul></ul>
+		</div>
+		</div>
+		
+		<div id="btn">
+			<button class="right">右移</button>
+			<button class="esc">取消</button>
+			<button class="left">左移</button>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			//右移
+			$(".right").click(function(){
+				$(":checkbox").each(function(){
+					if($(this).prop("checked")==true){
+						$(this).prop("checked",true).parent().appendTo("#right ul");
+					}
+				})
+			})
+			//取消
+			$(".esc").click(function(){
+				window.location.reload();
+			})
+			//左移
+			$(".left").click(function(){
+				$(":checkbox").each(function(){
+					if($(this).prop("checked")==true){
+						$(this).prop("checked",true).parent().appendTo("#left ul");
+					}
+				})
+			})
+		})
+		//单选
+		$(":checkbox").click(function(){
+			if(this.checked){
+				$(this).prop("checked",true).parent().css("font-size","50px").css("color","red");
+			}else{
+				$(this).prop("checked",false).parent().css("font-size","").css("color","");	
+			}
+		})
+	</script>
+</html>

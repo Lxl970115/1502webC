@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-3.1.1.js"></script>
+	</head>
+	<body>
+		<button id="quan">全选</button>
+		<button id="fan">反选</button>
+		<button id="no">全不选</button>
+		<button id="odd">奇数行颜色</button>
+		<button id="even">偶数行颜色</button>
+		<table border="2">
+			<tr>
+				<td>
+					<th>姓名</th>
+					<th>性别</th>
+					<th>住址</th>
+					<th>专业</th>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" id="d" /></td>
+				<td>张三</td>
+				<td>男</td>
+				<td>河南</td>
+				<td>web</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" id="d" /></td>
+				<td>品牌</td>
+				<td>男</td>
+				<td>河南</td>
+				<td>web</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" id="d" /></td>
+				<td>丫丫</td>
+				<td>男</td>
+				<td>河南</td>
+				<td>web</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" id="d" /></td>
+				<td>哈哈</td>
+				<td>男</td>
+				<td>河南</td>
+				<td>web</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" id="d" /></td>
+				<td>李四</td>
+				<td>男</td>
+				<td>河南</td>
+				<td>.net</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" id="d" /></td>
+				<td>大区</td>
+				<td>男</td>
+				<td>河南</td>
+				<td>PHP</td>
+			</tr>
+		</table>
+	</body>
+	<script>
+		//全选
+		$("#quan").click(function(){
+			$(":checkbox").prop("checked",true).parent().parent().css("font-size","50px").css("color","red");
+		})
+		//反选
+		$("#fan").click(function(){
+			$(":checkbox").each(function(){
+				$(this).prop("checked",!$(this).prop("checked"));
+			  if($(this).prop("checked")){
+					$(this).parent().parent().css("font-size","50px").css("color","red");	
+					
+				}
+				else{					
+					$(this).parent().parent().css("font-size","").css("color","");
+					
+				}
+				
+			})
+		
+		})
+		//单选
+		$(":checkbox").click(function(){
+			if(this.checked){
+				$(this).prop("checked",true).parent().parent().css("font-size","50px").css("color","red");
+			}else{
+				$(this).prop("checked",false).parent().parent().css("font-size","").css("color","");	
+			}
+		})
+		//全不选
+		$("#no").click(function(){
+			$(":checkbox").prop("checked",false).parent().parent().css("font-size","").css("color","");
+		})
+		//奇数行颜色
+		$("#odd").click(function(){
+			$("tr:odd").css("background","red");
+		})
+		//偶数行颜色	
+		$("#even").click(function(){
+			$("tr:even").css("background","yellow");
+		})
+
+	</script>
+</html>
