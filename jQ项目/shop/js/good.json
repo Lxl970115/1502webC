@@ -1,0 +1,114 @@
+[
+	{
+		"colors":[
+			{
+					"color":"蓝色",
+					"img":"../img/img/pro_img/blue.jpg",
+					"gshow":[
+								{
+									"img":"../img/img/pro_img/blue_one_small.jpg"
+								},{
+									"img":"../img/img/pro_img/blue_two_small.jpg"
+								},{
+									"img":"../img/img/pro_img/blue_three_small.jpg"
+									}						
+						],
+					"list":[
+								{
+									"img":"../img/img/pro_img/blue_one.jpg"
+								},{
+									"img":"../img/img/pro_img/blue_two.jpg"
+								},{
+									"img":"../img/img/pro_img/blue_three.jpg"
+								}
+						],
+						"bigImg":[
+								{
+									"img":"../img/img/pro_img/blue_one_big.jpg"
+								},
+								{
+									"img":"../img/img/pro_img/blue_two_big.jpg"
+								},
+								{
+									"img":"../img/img/pro_img/blue_three_big.jpg"
+								}
+									
+							]	
+				},{
+					"color":"绿色",
+					"img":"../img/img/pro_img/green.jpg",
+					"gshow":[
+								{
+									"img":"../img/img/pro_img/green_one_small.jpg"
+								},{
+									"img":"../img/img/pro_img/green_two_small.jpg"
+								}				
+						],
+					"list":[
+								{
+									"img":"../img/img/pro_img/green_one.jpg"
+								},{
+									"img":"../img/img/pro_img/green_two.jpg"
+								}
+						],
+						"bigImg":[
+								{
+									"img":"../img/img/pro_img/green_one_big.jpg"
+								},
+								{
+									"img":"../img/img/pro_img/green_two_big.jpg"
+								}
+									
+							]		
+				},{
+					"color":"黄色",
+					"img":"../img/img/pro_img/yellow.jpg",
+					"gshow":[
+								{
+									"img":"../img/img/pro_img/yellow_one_small.jpg"
+								},{
+									"img":"../img/img/pro_img/yellow_two_small.jpg"
+								},{
+									"img":"../img/img/pro_img/yellow_three_small.jpg"
+								}						
+						],
+					"list":[
+								{
+									"img":"../img/img/pro_img/yellow_one.jpg"
+								},{
+									"img":"../img/img/pro_img/yellow_two.jpg"
+								},{
+									"img":"../img/img/pro_img/yellow_three.jpg"
+								}
+						],
+						"bigImg":[
+								{
+									"img":"../img/img/pro_img/yellow_one_big.jpg"
+								},
+								{
+									"img":"../img/img/pro_img/yellow_two_big.jpg"
+								},
+								{
+									"img":"../img/img/pro_img/yellow_three_big.jpg"
+								}
+									
+							]		
+				}
+				
+		],
+		"cp":[
+			{
+				"chanps":"1舒适的，健康设计理念，很好的，面料抗皱性非常好舒适的，舒适的，健康设计理念，很好的，面料抗皱性非常好舒适的，舒适的，健康设计理念，很好的，面料抗皱性非常好舒适的，"						
+			},{
+				"chanps":"2舒适的，健康设计理念，很好的，面料抗皱性非常好舒适的，舒适的，健康设计理念，很好的，面料抗皱性非常好舒适的，舒适的，健康设计理念，很好的，面料抗皱性非常好舒适的，"						
+			},{
+				"chanps":"3舒适的，健康设计理念，很好的，面料抗皱性非常好舒适的，舒适的，健康设计理念，很好的，面料抗皱性非常好舒适的，舒适的，健康设计理念，很好的，面料抗皱性非常好舒适的，"						
+			}
+			
+			
+		]
+
+
+
+}]		
+
