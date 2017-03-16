@@ -97,9 +97,13 @@
 }
 .join{
 	height: 100px;
-	background: yellow;
+	/*background: yellow;*/
 	width: 200px;
 	margin:  0 auto;
+	margin-left: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	color: red;
 }
 .header .box .h-nav .navs li {
   float: left;
