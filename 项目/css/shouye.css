@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form,img {
+    margin: 0;
+    padding: 0;
+}
+ /*各浏览器显示不同，去掉蓝色边框*/
+img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+ ul, ol {
+    list-style: none;
+}
+ /*统一组合框的默认样式*/
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+ select, input, button {
+    vertical-align: middle;
+}
+ select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+ /*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+ /*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+ body {
+    background: #fff;
+}
+ /*清除浮动*/
+.clearfix:before, 
+.clearfix:after {
+    content: "";
+    display: table;
+}
+ .clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+ .clearfix{
+    *zoom: 1; /*IE/7/6*/
+}
+ a {
+    color: #666;
+    text-decoration: none;
+}
+ a:hover {
+    color: #C81623;
+}
+ h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+ s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+ /*新浪*/
+.col-red {
+    color: #ff8400 !important;
+}
+ /*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1024px;
+    margin: 0 auto;
+}
+ .fl {
+    float: left;
+}
+ .fr {
+    float: right;
+}
+ .al {
+    text-align: left;
+}
+ .ac {
+    text-align: center;
+}
+ .ar {
+    text-align: right;
+}
+
+.header{
+	height: 44px;
+	background: #333333;
+	position: relative;
+}
+.header a{
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat;
+	display: block;
+}
+#he1{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat 0px 0px ;
+	left: 10px;
+	top: 7px;
+}
+#he1:hover{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat -50px 0px ;
+	left: 10px;
+	top: 7px;
+}
+#he2{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat -101px 0px ;
+	left: 800px;
+	top: 7px;
+}
+#he2:hover{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat -150px 0px ;
+	left: 800px;
+	top: 7px;
+}
+#he3{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat 0px -100px ;
+	left: 880px;
+	top: 7px;
+}
+#he3:hover{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat -50px -100px ;
+	left: 880px;
+	top: 7px;
+}
+#he4{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat -100px -100px ;
+	left: 960px;
+	top: 7px;
+}
+#he4:hover{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat -150px -100px ;
+	left: 960px;
+	top: 7px;
+}
+.header span{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	left: 50%;
+	top: 7px;
+	background: url(../image/icon.png) no-repeat -100px -450px ;
+}
+ .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+    }
+    .swiper-slide img{
+    	width: 1024px;
+    	height: 328px;
+    }
+.you{
+	height: 45px;
+}
+.yLeft{
+	width: 450px;
+	border-top: 1px solid #CCCCCC;
+	line-height: 45px;
+	margin-top: 24px;
+}
+.yReft{
+	width: 450px;
+	border-top: 1px solid #CCCCCC;
+	line-height: 45px;
+	margin-top: 24px;
+}
+.center{
+	width: 124px;
+}
+.center h2{
+	
+	line-height: 45px;
+	text-align: center;
+}
+.main{
+	height: 141px;
+}
+.main li{
+	float: left;
+	overflow: hidden;
+	padding: 0 8px;
+}
+.main1{
+	height: 60px;
+	margin-top:5px;
+}
+.main1 li{
+	float: left;
+	
+	padding: 0 5px;
+}
+.main2{
+	height: 60px;
+	margin-top:5px;
+}
+.main2 li{
+	float: left;
+	padding: 0 5px;
+}
+/*图片放大*/
+.main ul li img:hover{
+	transform: scale(1.4);
+	transition: all 1s; 
+}
+/*图片变淡*/
+.main1 ul li img:hover{
+	opacity: 0.5;
+	transition: all 1s; 
+}
+.main2 ul li img:hover{
+	opacity: 0.5;
+	transition: all 1s; 
+}
+.header .aa ul{
+	width: 135px;
+	height: 320px;
+	background: #C0C0C0;
+	position: absolute;
+	left: 0;
+	top: 44px;
+	z-index: 9999;
+	display: none;
+}
+.header .aa ul li{
+	width: 135px;
+	height: 40px;
+}
+.header .aa ul li a{
+	background:none;
+	width: 135px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: white;
+	font-weight: bold;
+}
+.header .aa ul li a:hover{color: red;}

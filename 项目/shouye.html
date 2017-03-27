@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-3.1.1.js"></script>
+		<link rel="stylesheet" href="css/shouye.css" />
+		<script src="swiper.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="swiper.min.css"/>
+	</head>
+	<body>
+		<!--导航-->
+		 <div class="header w">
+			<a href="#" id="he1"></a>
+			<div class="aa">
+				<ul>
+					<li><a href="shouye.html">首页</a></li>
+					<li><a href="fenlei.html">分类</a></li>
+					<li><a href="dapei.html">搭配</a></li>
+					<li><a href="xiangqing.html">详情</a></li>
+					<li><a href="sousu.html">搜素</a></li>
+					<li><a href="denglu.html">登陆</a></li>
+					<li><a href="wode.html">我的</a></li>
+					<li><a href="gouwuche.html">购物袋</a></li>
+				</ul>
+			</div>
+			
+			<span></span>
+			<div class="headerLink">
+				<a href="#" id="he2"></a>
+				<a href="#" id="he3"></a>
+				<a href="#" id="he4"></a>
+			</div>
+		</div>
+		 <!-- Swiper 轮播-->
+		 <div class="lun w">
+		 	<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="1.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="2.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="3.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="4.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="5.jpg" alt="" /></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+   </div>
+		 </div>
+		 <!--优选品牌-->
+		<div class="you w clearfix">
+			<div class="yLeft fl"></div>
+			<div class="center fl"><h2>优选品牌</h2></div>
+			<div class="yReft fr"></div>
+		</div>
+
+		<div class="main w">
+			<ul>
+				<li><img src="image/shouye/shouye-youxuan01.png" alt="" /></li>
+				<li><img src="image/shouye/shouye-youxuan02.png" alt="" /></li>
+				<li><img src="image/shouye/shouye-youxuan03.png" alt="" /></li>
+			</ul>
+		</div>
+		<div class="main1 w">
+			<ul>
+				<li><img src="image/shouye/shouye-pinpai01.png" alt="" /></li>
+				<li><img src="image/shouye/shouye-pinpai02.png" alt="" /></li>
+				<li><img src="image/shouye/shouye-pinpai03.png" alt="" /></li>
+				<li><img src="image/shouye/shouye-pinpai04.png" alt="" /></li>
+				<li><img src="image/shouye/shouye-pinpai05.png" alt="" /></li>
+				<li><img src="image/shouye/shouye-pinpai06.png" alt="" /></li>
+			</ul>
+		</div>
+		<div class="main2 w">
+			<ul>
+				<li><img src="image/shouye/shouye-pinpai07.png" alt="" /></li>
+				<li><img src="image/shouye/shouye-pinpai08.png" alt="" /></li>
+				<li><img src="image/shouye/shouye-pinpai09.png" alt="" /></li>
+				<li><img src="image/shouye/shouye-pinpai10.png" alt="" /></li>
+				<li><img src="image/shouye/shouye-pinpai11.png" alt="" /></li>
+				<li><img src="image/shouye/shouye-pinpai12.png" alt="" /></li>
+			</ul>
+		</div>
+	</body>
+	<script>
+		//swiper轮播
+	    var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        paginationClickable: '.swiper-pagination',
+	        nextButton: '.swiper-button-next',
+	        prevButton: '.swiper-button-prev',
+	        spaceBetween: 30,
+	        effect: 'fade',
+			autoplay:2000
+	    });			
+	    // 扫一扫
+	    $("#he2").click(function(){
+	    	alert("暂不支持扫一扫功能");
+	    })
+	    // 搜索
+	    $("#he3").click(function(){
+	    	location.href = "sousu.html";
+	    })
+	     // 购物袋
+	    $("#he4").click(function(){
+	    	location.href = "gouwuche.html";
+	    })
+	    //首页
+	    $("#he1").click(function(){
+	    	$(".aa ul").show();	
+	    })
+    </script>
+</html>

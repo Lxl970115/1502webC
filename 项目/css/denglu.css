@@ -1,0 +1,190 @@
+@import url("reset.css");
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+#wrapper {
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+}
+header {
+    height: 44px;
+    background: #333333;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+header #down {
+    width: 24px;
+    height: 24px;
+    background: url("../image/icon.png") no-repeat -100px -50px;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+header #down:hover {
+    background: url("../image/icon.png") no-repeat -150px -50px;
+}
+header #fan {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: 5px;
+    background: url("../image/icon.png") no-repeat -100px -450px;
+    display: inline-block;
+}
+section {
+    width: 807px;
+    padding-top: 32px;
+    margin: 0 auto;
+    height: 542px;
+    overflow: hidden;
+}
+section .user-img {
+    float: left;
+    height: 500px;
+    width: 411px;
+    padding: 60px 0 0 50px;
+    border-right: 1px solid #e8e6e6;
+}
+section .user-img .img {
+    width: 285px;
+    height: 285px;
+    border: 2px solid #e8e8e7;
+    font: 18px/1 "微软雅黑";
+    letter-spacing: 5px;
+}
+section .user-img .img img {
+    width: 100%;
+    height: 100%;
+}
+section .user-img h1 {
+    font-weight: normal;
+    margin-top: 20px;
+    width: 285px;
+    font-size: 17px;
+    letter-spacing: 5px;
+}
+section .user-img h1 span {
+    float: right;
+}
+section .user-form {
+    width: 329px;
+    height: 629px;
+    float: left;
+    margin-left: 67px;
+}
+section .user-form h2 {
+    font: 17px/1 "黑体";
+    width: 325px;
+    border-bottom: 1px solid #dddcdc;
+    margin: 38px auto 40px;
+    padding-bottom: 5px;
+}
+section .user-form form {
+    width: 100%;
+    position: relative;
+}
+section .user-form form .error {
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    color: red;
+}
+section .user-form form #phone,
+section .user-form form #psd,
+section .user-form form #user {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    width: 329px;
+    height: 48px;
+    border: 2px solid #b5b5b5;
+    font: 15px/48px "黑体";
+    color: #666;
+}
+section .user-form form #sbmt {
+    cursor: pointer;
+    width: 329px;
+    height: 50px;
+    background: #323333;
+    border: none;
+    outline: none;
+    color: #fff;
+    font: 17px/50px '黑体';
+}
+section .user-form form .btn-bot {
+    margin-top: 15px;
+    height: 16px;
+}
+section .user-form form .btn-bot label {
+    margin-right: 70px;
+}
+section .user-form form .btn-bot [for="remb"] {
+    color: #666666;
+    font: 15px/1 "黑体";
+}
+section .user-form form .btn-bot #fg {
+    font: 15px/1 "黑体";
+    color: #333333;
+}
+section .user-form form .btn-bot #sg {
+    color: #f2ba8a;
+    font: 15px/1 "黑体";
+}
+section .user-form .oth-login {
+    margin-top: 20px;
+    padding-top: 20px;
+    position: relative;
+    border-top: 1px dashed #dddcdc;
+}
+section .user-form .oth-login span {
+    font: 15px/1 "黑体";
+    color: #333333;
+}
+section .user-form .oth-login a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    color: #333333;
+}
+section .user-form .oth-login a:nth-of-type(1) {
+    background: url("../image/icon.png") -100px -500px no-repeat;
+    left: 220px;
+    bottom: 0;
+}
+section .user-form .oth-login a:nth-of-type(1):hover {
+    background: url("../image/icon.png") -150px -500px no-repeat;
+    left: 220px;
+    bottom: 0;
+}
+section .user-form .oth-login a:nth-of-type(2) {
+    background: url("../image/icon.png") -100px -550px no-repeat;
+    left: 262px;
+    bottom: 0;
+}
+section .user-form .oth-login a:nth-of-type(2):hover {
+    background: url("../image/icon.png") -150px -550px no-repeat;
+    left: 262px;
+    bottom: 0;
+}
+section .user-form .oth-login a:nth-of-type(3) {
+    background: url("../image/icon.png") -100px -600px no-repeat;
+    left: 303px;
+    bottom: 0;
+}
+section .user-form .oth-login a:nth-of-type(3):hover {
+    background: url("../image/icon.png") -150px -600px no-repeat;
+    left: 303px;
+    bottom: 0;
+}
+footer {
+    height: 80px;
+}
+footer p {
+    text-align: center;
+    line-height: 80px;
+    letter-spacing: 5px;
+}

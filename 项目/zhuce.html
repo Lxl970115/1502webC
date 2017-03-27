@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/denglu.css" />
+    <script src="jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="jquery.validate.min.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+    <header>
+        <a id="down" href="index.html"></a>
+        <div id="fan"></div>
+    </header>
+    <section>
+        <div class="user-img">
+            <div class="img"><img src="image/denglu/denglu-pic01.png" /></div>
+            <h1>有范 <span>是一种生活态度</span></h1>
+        </div>
+        <div class="user-form">
+            <h2>注册有范</h2>
+            <form action="javascript:;" id="form">
+                <input type="text" name="user" id="user" placeholder="用户名">
+                <input type="password" name="psd" id="psd" placeholder="密码">
+                <input type="tel" name="phone" id="phone" placeholder="手机号">
+                <input type="submit" value="注册" id="sbmt">
+                <div class="btn-bot">
+                    <label for="remb"><input type="checkbox" name="remb" id="remb">记住登录状态</label>
+                    <a href="javascript:;" id="fg">忘记密码?</a>
+                    <span>|</span>
+                    <a href="denglu.html" id="sg">立即登录</a>
+                </div>
+            </form>
+            <div class="oth-login">
+                <span>第三方登录方式:</span>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>(c) Copyright 2017 zs. All Rights Reserved. </p>
+    </footer>
+</div>
+</body>
+<script>
+    $().ready(function() {
+        // 在键盘按下并释放及提交后验证提交表单
+        $("#form").validate({
+            onsubmit: true, // 是否在提交是验证
+            onfocusout: false, // 是否在获取焦点时验证
+            onkeyup: false, // 是否在敲击键盘时验证
+            rules: {
+                user: {
+                    required: true,
+                    rangelength: [6, 16]
+                },
+                psd: {
+                    required: true,
+                    rangelength: [6, 16]
+                },
+                phone: {
+                    required: true,
+                    minlength: 11,
+                    maxlength: 11,
+                    digits: true,
+                },
+            },
+            messages: {
+                user: {
+                    required: "请输入用户名",
+                    rangelength: "用户名应该在6-16位之间"
+                },
+                psd: {
+                    required: "请输入密码",
+                    rangelength: "密码应该在6-16位之间"
+                },
+                phone: {
+                    required: "请输入电话号",
+                    minlength: "手机号只支持11位",
+                    maxlength: "手机号只支持11位",
+                    digits: "只能输入数字"
+                }
+            },
+            submitHandler: function(form) { //通过之后回调
+                //进行ajax传值
+                $.ajax({
+                    url: "http://www.petrichoro.com/ports/index.php/Home/User/regist",
+                    type: "post",
+                    dataType: "jsonp",
+                    data: {
+                        user: $("#user").val(),
+                        psd: $("#psd").val(),
+                        phone: $("#phone").val()
+                    },
+                    success: function(msg) {　　　 //要执行的代码
+                        if(msg.status==1){
+                            alert("恭喜您注册成功",window.location.href="shouye.html")
+                        }else{
+                            alert(msg._text)
+                        }
+                    }
+                });
+            },
+            invalidHandler: function(form, validator) { return false; }
+        });
+    })
+</script>
+
+</html>

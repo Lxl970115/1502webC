@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form,img {
+    margin: 0;
+    padding: 0;
+}
+ /*各浏览器显示不同，去掉蓝色边框*/
+img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+ ul, ol {
+    list-style: none;
+}
+ /*统一组合框的默认样式*/
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+ select, input, button {
+    vertical-align: middle;
+}
+ select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+ /*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+ /*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+ body {
+    background: #fff;
+}
+ /*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+ .clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+ .clearfix{
+    *zoom: 1; /*IE/7/6*/
+}
+ a {
+    color: #666;
+    text-decoration: none;
+}
+ a:hover {
+    color: #C81623;
+}
+ h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+ s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+ /*新浪*/
+.col-red {
+    color: #ff8400 !important;
+}
+ /*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1024px;
+    margin: 0 auto;
+}
+ .fl {
+    float: left;
+}
+ .fr {
+    float: right;
+}
+ .al {
+    text-align: left;
+}
+ .ac {
+    text-align: center;
+}
+ .ar {
+    text-align: right;
+}
+.header{
+	height: 44px;
+	background: #CCCCCC;
+	position: relative;
+}
+.header a{
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat;
+	display: block;
+}
+#he1{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat 0px 0px ;
+	left: 10px;
+	top: 7px;
+}
+#he1:hover{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat -50px 0px ;
+	left: 10px;
+	top: 7px;
+}
+#he2{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat -101px 0px ;
+	left: 800px;
+	top: 7px;
+}
+#he2:hover{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat -150px 0px ;
+	left: 800px;
+	top: 7px;
+}
+#he3{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat 0px -100px ;
+	left: 880px;
+	top: 7px;
+}
+#he3:hover{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat -50px -100px ;
+	left: 880px;
+	top: 7px;
+}
+#he4{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat -100px -100px ;
+	left: 960px;
+	top: 7px;
+}
+#he4:hover{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(../image/icon.png) no-repeat -150px -100px ;
+	left: 960px;
+	top: 7px;
+}
+.header span{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	left: 50%;
+	top: 7px;
+	background: url(../image/icon.png) no-repeat -100px -450px ;
+}
+.nav{
+	height: 58px;
+	border-bottom: 3px solid #CCCCCC;
+}
+.nav a{
+	display: inline-block;
+	width: 124px;
+	font-size: 30px;
+	height: 58px;
+	text-align: center;
+	line-height: 58px;
+	margin: 0 8px;
+}
+.nav a:hover{
+	border-bottom: 4px solid #0f0f0f;
+}
+.main{
+	height: 375px;
+	margin-top: 10px;
+}
+.main li{
+	float: left;
+	overflow: hidden;
+}
+.main li img{
+	width: 238px;
+	height: 373px;
+	padding: 0 5px;
+}
+.main li h2{
+	font-size: 18px;
+	
+	width: 197px;
+	height: 28px;
+	line-height: 28px;
+	margin-left: 20px;
+	margin-top: 5px;
+	text-align: center;
+}
+.main a{
+	display: inline-block;
+	width: 103px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	    margin-top: 5px;
+    margin-left: 57px
+}
+/*图片变淡*/
+.main ul li img:hover{
+	opacity: 0.5;
+	transition: all 1s;
+}
+.bigBox .box{
+	display: none;
+}
+/*选择第一个box 让他显示*/
+.box:nth-child(1){
+	display: block;
+}

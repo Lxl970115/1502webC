@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-3.1.1.js"></script>
+		<link rel="stylesheet" href="css/sousu.css" />
+	</head>
+	<body>
+		<div class="header w">
+			<a href="#" id="he1"></a>
+			<span><input type="text" id="text"/></span>
+			<a href="#" id="he2"></a>
+			<a href="javaScript:;" id="he3"></a>
+			<a href="#" id="he4"></a>
+		</div>
+		<div class="bigImg w">
+			<h3></h3>
+			<h2></h2>
+			<table border="2">
+				
+			</table>
+		</div>
+	</body>
+	<script>
+    //返回首页
+		//	
+		$("#he1").click(function(){
+			location.href = "shouye.html";
+		})
+		//搜索天气
+		$("#he3").click(function(){
+//			console.log(1111)
+			$(".bigImg h3").html("");
+			$(".bigImg h2 ").html("");
+			$(".bigImg table").html("");
+			var datajson ;
+//			console.log(11111)
+			var $text = $("#text").val();
+//			console.log($text)
+
+			$.ajax({
+				type:"get",
+				url:"http://wthrcdn.etouch.cn/weather_mini?city="+$text,
+				async:true,
+				dataType:"jsonp",
+				success:function(data){
+					if(data.status ==1000){
+					datajson = data.data;
+					
+					var $str = "<span style='color: white;'>最近五天的天气情况</span>"
+					$(".bigImg h3").append(datajson.city+$str);
+					$(".bigImg h2").append(datajson.ganmao);
+						var $str2 = "<tr><th style='color: yellow;'>风向</th><th style='color: yellow;'>风力</th><th style='color: yellow;'>高温</th><th style='color: yellow;'>天气</th><th style='color: yellow;'>低温</th><th style='color: yellow;'>日期</th></tr>";
+						$(".bigImg table").append($str2);
+						
+						
+					$.each(datajson.forecast, function(i,j) {
+//						console.log(j)
+						
+						var $str1 = "<tr><td style='color: red;'>"+j.fengxiang+"</td><td style='color: deeppink;'>"+j.fengli+"</td><td style='color: red;'>"+j.high+"</td><td style='color: red;'>"+j.type+"</td><td style='color: red;'>"+j.low+"</td><td style='color: red;'>"+j.date+"</td></tr>"
+						$(".bigImg table").append($str1);
+						
+					});	
+				}else{
+					$(".bigImg h3").append("请输入正确的城市")
+				}
+//					console.log(data)
+					
+				}
+			});
+		})
+		// 扫一扫
+	    $("#he2").click(function(){
+	    	alert("暂不支持扫一扫功能");
+	    })
+
+	     // 购物袋
+	    $("#he4").click(function(){
+	    	location.href = "gouwuche.html";
+	    })
+	</script>
+</html>

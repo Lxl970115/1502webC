@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<script src="jquery-3.1.1.js"></script>
+	<link rel="stylesheet" href="css/gouwudai.css"/>
+	<script src="swiper.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="swiper.min.css"/>
+	<style>
+		#car-fen{background-image: url('./image/icon.png');background-position: -100px -150px;}
+		#car-fen:hover{background-image: url('./image/icon.png');background-position: -150px -150px;}
+		html, body {
+			position: relative;
+			height: 100%;
+		}
+		body {
+			font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			color:#000;
+			margin: 0;
+			padding: 0;
+		}
+		.swiper-container {
+			width: 100%;
+			height: 100%;
+		}
+		.swiper-slide img{width: 100%;height: 100%;}
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+
+		}
+	</style>
+</head>
+<body>
+<div class="warp">
+	<div class="header">
+		<a href="#" id="he1"></a>
+		<span class="car-titl">购物车</span>
+		<a href="#" id="he2"></a>
+		<a href="#" id="he3"></a>
+		<a href="#" id="car-fen"></a>
+	</div>
+	<div class="kuang">
+		<p><a href="./index.html" base="_self">首页</a></p>
+		<p><a href="./type.html" base="_self">分类</a></p>
+		<p><a href="./collocation.html" base="_self">搭配</a></p>
+		<p><a href="./details.html" base="_self">详情</a></p>
+		<p><a href="./search.html" base="_self">搜索</a></p>
+		<p><a href="./login.html" base="_self">登录</a></p>
+		<p><a href="./admin.html" base="_self">我的</a></p>
+		<p><a href="./shoppingCart.html" base="_self" style="color: red;">购物袋</a></p>
+	</div>
+	<div class="car-box">
+		<div class="car-head">
+			<img src="./image/gouwuche/images/购物袋_03.png" alt=""/>
+			<img src="./image/gouwuche/images/购物袋_05.png" alt=""/>
+			<span>查看购物袋</span>
+			<span>填写订单</span>
+			<span>完成购物</span>
+			<div class="fen">
+				<p><span class="spone"></span><a href="#">微信</a></p>
+				<p><span class="sptwo"></span><a href="#">空间</a></p>
+				<p><span class="spthree"></span><a href="#">微博</a></p>
+			</div>
+		</div>
+		<table class="car-table">
+			<tr>
+				<td>商品信息</td>
+				<td>单价(元)</td>
+				<td>数量</td>
+				<td>返范票</td>
+				<td>小计(元)</td>
+				<td>操作</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox"/>
+					<img src="./image/gouwuche/fenlei-nanzhuang01.png" alt=""/>
+					<p>Life summey袋鼠服春季特卖</p>
+					<p>颜色：黑色</p>
+					<p>尺码：XL</p>
+				</td>
+				<td>￥299.00</td>
+				<td><span class="car-jia">-</span><span class="car-num">0</span><span class="car-jian">+</span></td>
+				<td>0</td>
+				<td>￥299.00</td>
+				<td><button class="re-btn" style="background: yellow">移除</button><button class="join-btn" style="background: red">加入收藏</button></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox"/>
+					<img src="./image/gouwuche/fenlei-nanzhuang02.png" alt=""/>
+					<p>Life summey袋鼠服春季特卖</p>
+					<p>颜色：黑色</p>
+					<p>尺码：XL</p>
+				</td>
+				<td>￥299.00</td>
+				<td><span class="car-jia">-</span><span class="car-num">0</span><span class="car-jian">+</span></td>
+				<td>0</td>
+				<td>￥299.00</td>
+				<td><button class="re-btn" style="background: yellow">移除</button><button class="join-btn" style="background: red">加入收藏</button></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox"/>
+					<img src="./image/gouwuche/fenlei-nanzhuang03.png" alt=""/>
+					<p>Life summey袋鼠服春季特卖</p>
+					<p>颜色：黑色</p>
+					<p>尺码：XL</p>
+				</td>
+				<td>￥299.00</td>
+				<td><span class="car-jia">-</span><span class="car-num">0</span><span class="car-jian">+</span></td>
+				<td>0</td>
+				<td>￥299.00</td>
+				<td><button class="re-btn" style="background: yellow">移除</button><button class="join-btn" style="background: red">加入收藏</button></td>
+			</tr>
+		</table>
+		<div class="car_quan">
+			<ul>
+				<li><input type="checkbox" class="quan"/>&nbsp;全选</li>
+				<li><a href="#">批量删除</a></li>
+				<li><a href="#">批量移入收藏夹</a></li>
+				<span>商品总价：<b>￥999.99</b>元</span>
+			</ul>
+		</div>
+		<div class="car_zai">
+			<a href="javescript:;"><span></span>再逛逛</a>
+			<a href="javescript:;">去结算&nbsp;&nbsp;<span></span></a>
+		</div>
+		<div class="cou">
+			<div class="cou-left">
+				<a href="javescript:;">-</a>凑单商品
+			</div>
+			<div class="car-right">
+				<button class="cou-left"><img src="./image/gouwuche/images/car_03.png" alt=""/></button>
+				<button class="cou-right"><img src="./image/gouwuche/images/car_05.png" alt=""/></button>
+			</div>
+		</div>
+		<div class="car-bottom">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="1.jpg" alt="" /></div>
+					<div class="swiper-slide"><img src="2.jpg" alt="" /></div>
+					<div class="swiper-slide"><img src="3.jpg" alt="" /></div>
+					<div class="swiper-slide"><img src="4.jpg" alt="" /></div>
+					<div class="swiper-slide"><img src="5.jpg" alt="" /></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination swiper-pagination-white"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next swiper-button-white"></div>
+				<div class="swiper-button-prev swiper-button-white"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script>
+	//swiper轮播
+	var swiper = new Swiper('.swiper-container', {
+		pagination: '.swiper-pagination',
+		paginationClickable: '.swiper-pagination',
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev',
+		spaceBetween: 30,
+		effect: 'fade',
+		autoplay:2000
+	});
+	// 搜索
+	    $("#he3").click(function(){
+	    	location.href = "sousu.html";
+	    })
+	//首页
+	    $("#he1").click(function(){
+	    	location.href = "shouye.html";
+	    })
+	    // 扫一扫
+	    $("#he2").click(function(){
+	    	alert("暂不支持扫一扫功能");
+	    })
+</script>
+</html>

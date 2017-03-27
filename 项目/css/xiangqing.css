@@ -1,0 +1,86 @@
+.city{display: inline-block;width: 100px; height: 20px;position: absolute;left: 45%;top: 15px;color: white;}
+.det_goods{width: 1015px;height: 575px;position: relative;margin-top: 10px;}
+.det_bigImg{width: 492px;height: 475px;position: absolute;left: 0;}
+.det_smallImg{width: 492px;height: 80px;position: absolute;left: 0;bottom: 10px;}
+._smallImg{width: 75px;height: 75px;float: left;margin-left: 15px;}
+._smallImg img{width: 100%;height:100%;}
+.det_news{width:510px;height: 475px;float: right;position: absolute;right: 0;}
+.det_bigImg img{width: 100%;height: 100%;}
+.det_boxone{width: 100%;height: 110px;border-bottom: 1px solid #999;}
+.det_boxone p{line-height: 35px;color: #666;}
+.det_boxtwo{width: 100%;height: 110px;border-bottom: 1px solid #999;color: #999;}
+.det_boxthree{width: 100%;height: 250px;color: #999;}
+.det_color{width: 60px;height: 60px;border: 2px solid #666;margin-left: 60px;margin-top: 15px;}
+.det_color img{width: 100%;height:100%;}
+.det_boxthree p:nth-child(1) span{float: left;line-height: 60px;}
+.det_boxthree p:nth-child(3){margin-top: 15px;}
+.det_boxthree p:nth-child(4) a{display: inline-block;width: 20px;height: 20px;background-image: url("../image/icon.png");background-position: 0 -190px;position: relative;right: 20px;}
+.det_boxtwo p:nth-child(1) span:nth-child(1){color: black;}
+.det_boxtwo p:nth-child(1) span:nth-child(2){background:#ee804f; color: white;margin-left: 5px;}
+.det_boxtwo p:nth-child(2) span{text-decoration: line-through;}
+.det_boxtwo p:nth-child(3) span{display:inline-block;width:20px;height:20px;background-image: url("../image/icon.png");background-position: 100px -245px;}
+.det_boxtwo p:nth-child(3) a:hover{color: #ee804f;}
+.det_size{width: 100px;height: 20px;border-radius: 5px;}
+.size_box{width: 100px;height: 150px;background: #999;text-align: center;position: absolute;left:50px;display: none;}
+.size_box a{color: white;line-height: 25px;display: block;width: 100%;}
+.size_box a:hover{color: yellow;background: #6e6e6e;}
+.det_num{margin-top: 15px;}
+.det_num a:nth-child(1){display: inline-block;width: 15px;height: 15px;background: #666;text-align: center;color: white;line-height: 15px;margin-left: 15px;}
+.det_num span{margin-left: 15px;}
+.det_num a:nth-child(3){display: inline-block;width: 15px;height: 15px;background: #666;text-align: center;color: white;line-height: 15px;margin-left: 15px;margin-right: 15px;}
+.join{display:inline-block;width: 150px;height: 50px;border-radius: 5px;border: 1px solid #999999;text-align: center;line-height: 50px;margin-top: 25px;margin-left: 20px;}
+.goBuy{display:inline-block;width: 150px;height: 50px;border-radius: 5px;border: 1px solid #999999;background:#999;color:white;text-align: center;line-height: 50px;margin-top: 25px;margin-left: 20px;}
+.goodsNews{border-bottom: 2px solid #e3e3e3;border-top: 2px solid #e3e3e3;width: 100%;height:115px;margin-top: 25px;position: relative;}
+.goodsNews_titleOne{display: block;width:125px;height: 60px;position: absolute;left: 0;top: -20px;background: white;}
+.goodsNews_titleTwo{display: block;width:125px;height: 60px;position: absolute;left: 0;bottom: -60px;background: white;}
+._titleOne_news{width: 100%;height: 50px;background: #f8f8f8;margin-top: 40px;}
+._titleOne_news li{width:25%;height: 50px;line-height: 50px;text-align: center;color: #999999;float:left;}
+.det_h2{text-align: center;margin: 40px 0;}
+.jianjie{width: 540px;height: 80px;margin: 0 auto;text-align: center;}
+.big{text-align: center;margin-top: 20px;}
+.cm{width: 860px;height: 220px;margin: 0 auto;border: 1px solid black; border-collapse: collapse;}
+.cm td{text-align: center;line-height: 40px;border: 1px solid #666;}
+.cm tr:first-child{color: white;background: #666;}
+.det_bottom{position: relative;padding-top: 50px;border-top: 1px solid #999;border-bottom: 1px solid #999;margin-top: 20px;padding-bottom: 20px;}
+.det_one{display:block;width: 100px;height: 30px;background: white;position: absolute;left: 0;top: -10px;z-index: 9;}
+.det_copy{margin-top: 10px;color: #6e6e6e;}
+.warp{width: 1015px;height: 750px;margin: 0 auto;}
+body{position:relative;}
+.header{width: 1015px;height: 45px;background: #323333;position: relative;background-size: auto;}
+.header a{display: inline-block;margin-top: 10px;margin-left: 45px;color: white;}
+.header a:nth-child(1){width: 30px;height: 30px;background-image: url("../image/icon.png");background-position: 0 0;}
+.header a:nth-child(1):hover{background-image: url("../image/icon.png");background-position: -50px 0;}
+.header a:nth-child(2){width: 30px;height: 50px;background-image: url("../image/icon.png");background-position: 100px 450px;position: absolute;left: 45%;top: -3px;}
+.header a:nth-child(3){width: 30px;height: 30px;background-image: url("../image/icon.png");background-position:100px 0;position: absolute;right:15%;}
+.header a:nth-child(3):hover{background-image: url("../image/icon.png");background-position: 50px 0;}
+.header a:nth-child(4){width: 30px;height: 30px;background-image: url("../image/icon.png");background-position:0 -100px;position: absolute;right:9%;}
+.header a:nth-child(4):hover{background-image: url("../image/icon.png");background-position:150px -100px;}
+.header a:nth-child(5){width: 30px;height: 30px;background-image: url("../image/icon.png");background-position:100px -100px;position: absolute;right:3%;}
+.header a:nth-child(5):hover{background-image: url("../image/icon.png");background-position: 50px -100px;}
+.lun{width: 1015px;height: 350px;}
+.kuang{width: 130px;height: 300px;border: 1px solid pink;position: absolute;background: #323333;z-index:2;text-align: center;display: none;}
+.kuang p{width: 100%;height: 25px;line-height: 25px;}
+.kuang p:hover a{color: yellow;}
+.kuang p:hover{background: #999999;}
+.kuang a{font-size: 20px;color: white;}
+.xiangqing{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	opacity: 0.5;
+	background: yellow;
+	z-index: 9999;
+}
+.xiangqing-one{
+	width: 500px;
+	height: 500px;
+	background: red;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -250px;
+	margin-top: -250px;
+	z-index: 999;
+}

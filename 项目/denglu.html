@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" href="css/denglu.css" />
+	<script type="text/javascript" src="jquery-3.1.1.js" ></script>
+	<script type="text/javascript" src="jquery.validate.min.js" ></script>
+</head>
+
+<body>
+<div id="wrapper">
+	<header>
+		<div id="down"></div>
+		<div id="fan"></div>
+	</header>
+	<section>
+		<div class="user-img">
+			<div class="img"><img src="image/denglu/denglu-pic01.png" /></div>
+			<h1>有范 <span>是一种生活态度</span></h1>
+		</div>
+		<div class="user-form">
+			<h2>登录有范</h2>
+			<form action="javascript:;" id="form">
+				<div class="user-logo"></div>
+				<div class="psd-logo"></div>
+				<div class="logo"></div>
+				<input type="text" name="user" id="user" placeholder="用户名">
+				<input type="password" name="psd" id="psd" placeholder="密码">
+				<input type="submit" value="登录" id="sbmt">
+				<div class="btn-bot">
+					<label for="remb"><input type="checkbox" name="remb" id="remb">记住登录状态</label>
+					<a href="javascript:;" id="fg">忘记密码?</a>
+					<span>|</span>
+					<a href="zhuce.html" id="sg">立即注册</a>
+				</div>
+			</form>
+			<div class="oth-login">
+				<span>第三方登录方式:</span>
+				<a href="javascript:;" id="a1"></a>
+				<a href="javascript:;" id="a2"></a>
+				<a href="javascript:;" id="a3"></a>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p>(c) Copyright 2017 zs. All Rights Reserved. </p>
+	</footer>
+</div>
+</body>
+<script>
+//微信跳转
+$(".oth-login #a1").click(function(){
+	location.href="https://www.baidu.com/baidu?ie=utf-8&tn=56060048_4_pg&ch=5&ssl_s=1&ssl_c=ssl1_15b03abab82&word=weixinxiazai&h_search_ext={%22count%22%3A4%2C%22list%22%3A[{%22txt%22%3A%22\u519c\u5987\u88ab\u4eba\u4e00\u7bad\u7a7f\u5fc3%22%2C%22cid%22%3A%2228673341%22%2C%22sellv%22%3A%22%22}%2C{%22txt%22%3A%22\u6c34\u5858\u53d1\u73b0\u592b\u59bb\u5c38\u4f53%22%2C%22cid%22%3A%2228673342%22%2C%22sellv%22%3A%22%22}%2C{%22txt%22%3A%22\u4fc4\u5236\u592a\u7a7a\u6253\u5370\u6837\u673a%22%2C%22cid%22%3A%2228673343%22%2C%22sellv%22%3Anull}%2C{%22txt%22%3A%22\u5e7f\u4e1c\u8857\u5934\u5de8\u4e73\u96d5\u50cf%22%2C%22cid%22%3A%2228673344%22%2C%22sellv%22%3Anull}%2C{%22txt%22%3A%22\u9a6c\u6765\u8b66\u82b1\u957f\u76f8\u751c\u7f8e%22%2C%22cid%22%3A%2228673345%22%2C%22sellv%22%3Anull}%2C{%22txt%22%3A%22\u7279\u6717\u666e\u63d0\u592a\u7a7a\u653f\u7b56%22%2C%22cid%22%3A%2228673346%22%2C%22sellv%22%3Anull}%2C{%22txt%22%3A%22\u6740\u9a6c\u7279\u4e3b\u64ad\u95f9\u8bfe\u5802%22%2C%22cid%22%3A%2228673347%22%2C%22sellv%22%3Anull}%2C{%22txt%22%3A%22\u6c14\u8c61\u5c40\u5173\u6ce8\u8427\u656c\u817e%22%2C%22cid%22%3A%2228673348%22%2C%22sellv%22%3Anull}%2C{%22txt%22%3A%22\u697c\u9876\u7a7a\u964d5\u7c73\u5927\u4f5b%22%2C%22cid%22%3A%2228673349%22%2C%22sellv%22%3Anull}%2C{%22txt%22%3A%22\u5218\u6d9b\u76f4\u64ad\u5fb7\u56fd\u884c%22%2C%22cid%22%3A%2228673350%22%2C%22sellv%22%3Anull}]}"
+})
+//QQ跳转
+$(".oth-login #a2").click(function(){
+	location.href="https://www.baidu.com/s?ie=utf-8&f=3&rsv_bp=1&ch=5&tn=56060048_4_pg&wd=qq%E4%B8%8B%E8%BD%BD&oq=%25E5%25BE%25AE%25E4%25BF%25A1%25E4%25B8%258B%25E8%25BD%25BD&rsv_pq=f217df1000028b61&rsv_t=1b889pZ%2FwKda3JHtuus1DYneUFfUMyJi4vi28ire7T8dMB%2FZ0rrV0FR2ygVrbVyhUrqIiQ&rqlang=cn&rsv_enter=1&rsv_sug3=3&rsv_sug1=4&rsv_sug7=100&rsv_sug2=0&prefixsug=QQ&rsp=1&inputT=3331&rsv_sug4=4771"
+})
+//跳转
+$(".oth-login #a3").click(function(){
+	location.href="https://www.baidu.com/s?ie=utf-8&f=3&rsv_bp=1&ch=5&tn=56060048_4_pg&wd=%E5%BE%AE%E5%8D%9A%E4%B8%8B%E8%BD%BD&oq=qq%25E4%25B8%258B%25E8%25BD%25BD&rsv_pq=8f67a2650002a7e1&rsv_t=c41eIwgXHxQ7yfvGqtvfHYsQ%2BA%2BbOeZ3xZ698wjsM%2ByGIHFqMGmTKn44miyCGzN3xxZqmg&rqlang=cn&rsv_enter=1&rsv_sug3=13&rsv_sug1=11&rsv_sug7=100&rsv_sug2=1&prefixsug=weiboxia&rsp=3&inputT=8739&rsv_sug4=9923"
+})
+	$().ready(function() {
+		// 在键盘按下并释放及提交后验证提交表单
+		$("#form").validate({
+			onsubmit: true, // 是否在提交是验证
+			onfocusout: false, // 是否在获取焦点时验证
+			onkeyup: false, // 是否在敲击键盘时验证
+
+			rules: {
+				user: {
+					required: true,
+					rangelength:[6,16]
+				},
+				psd: {
+					required: true,
+					rangelength:[6,16]
+				},
+			},
+			messages: {
+				user: {
+					required: "请输入用户名",
+					rangelength: "用户名应该在6-16位之间"
+				},
+				psd: {
+					required: "请输入密码",
+					rangelength: "密码应该在6-16位之间"
+				},
+			},
+			submitHandler: function(form) { //通过之后回调
+				//进行ajax传值
+				$.ajax({
+					url: "http://www.petrichoro.com/ports/index.php/Home/User/login",
+					type: "get",
+					dataType: "jsonp",
+					data: {
+						user: $("#user").val(),
+						psd: $("#psd").val()
+					},
+					success: function(msg) {　　　　 //要执行的代码
+//						console.log(msg)
+						if(msg.status==1){
+							location.href="shouye.html";
+						}else{
+							alert(msg._text)
+						}
+					}
+				});
+			},
+			invalidHandler: function(form, validator) { return false; }
+		});
+	})
+	 $("#down").click(function(){
+	    	location.href = "shouye.html";
+	    })
+</script>
+</html>
